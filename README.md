@@ -1,6 +1,6 @@
 # QRcode-component-ORIGIN
 
-<h1>Challenge from https://www.frontendmentor.io/challenges</h1>
+<h2>Challenge from https://www.frontendmentor.io/challenges</h2>
 
 Challenge was too easy, to put screen of QR code to the middle of frame<br>
 so i made it more challenging and made it functional.
