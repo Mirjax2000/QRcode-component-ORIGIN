@@ -1,0 +1,25 @@
+
+@use 'var' as *;
+@use 'mix' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+/* border-box */
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+// --- HTML settings: box sizing, selection
+html {
+    @include box-sizing (border-box);
+    @include selection;
+}
+
+
+body {
+    font-family: 'Overpass', sans-serif;
+}
+
+// @media only screen and (max-width: 500px) {}
