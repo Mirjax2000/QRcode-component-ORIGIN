@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+:root {
+  --h1-fs:1.375rem;
+  --par-fs:0.9375rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* border-box */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+html ::selection {
+  background-color: #1683ff;
+  color: #ffffff;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: #D5E1EF;
+}
+
+.container {
+  height: 100vh;
+  max-width: 20rem;
+  margin-inline: auto;
+  padding: 0 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.QRcode {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 1.25rem;
+  padding: 1rem;
+  box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.0476518);
+}
+.QRcode .QRcode-container {
+  background-color: #2C7DFA;
+  border-radius: 1.25rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 50;
+}
+.QRcode .QRcode-container .circle {
+  position: absolute;
+  width: 328px;
+  height: 328px;
+  border-radius: 50%;
+  background-color: #3685FF;
+}
+.QRcode .QRcode-container .circle1 {
+  top: -150px;
+  left: -150px;
+  z-index: 10;
+}
+.QRcode .QRcode-container .circle2 {
+  bottom: -200px;
+  right: -200px;
+  z-index: 20;
+}
+.QRcode .QRcode-container #qrcode {
+  position: relative;
+  padding-block: clamp(1rem, 23%, 64px);
+  z-index: 900;
+}
+.QRcode .QRcode-container #qrcode img {
+  width: 80%;
+  max-width: 160px;
+  height: auto;
+  margin-inline: auto;
+  opacity: 1;
+}
+.QRcode h1 {
+  font-weight: 700;
+  font-size: var(--h1-fs);
+  line-height: 1.2727272727em;
+  padding: 0 1rem;
+  margin: 1.25rem 0 1rem 0;
+}
+.QRcode p {
+  font-weight: 400;
+  font-size: var(--par-fs);
+  line-height: 1.2666666667em;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.bttn {
+  text-decoration: none;
+  color: #3685FF;
+}
+
+/*# sourceMappingURL=home.css.map */
